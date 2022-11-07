@@ -1,0 +1,9 @@
+node_modules
+dev-docs-assets
+dev-docs
+
+
+# local env files
+.env.local
+.env.*.local
+.dev-docs.json
