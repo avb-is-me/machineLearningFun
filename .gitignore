@@ -4,6 +4,7 @@ dev-docs
 
 
 # local env files
+.env
 .env.local
 .env.*.local
 .dev-docs.json

@@ -30,8 +30,6 @@ async function getArgs () {
 
 async function query(inputData) {
     const args = await getArgs();
-    console.log(args);
-    console.log(args.question)
     var data = {"inputs": {
 		"question": args.question,
 		"context": args.context || "My name is Clara and I live in Berkeley."
