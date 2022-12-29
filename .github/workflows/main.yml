@@ -1,15 +1,14 @@
-name: Aggregate Markdown
+name: Extract Contents
 
 on: [push]
 
 jobs:
-  aggregate_markdown:
+  extract_contents:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: grep -Ril '\.md$' dev-docs | xargs cat > aggregated.md
-    - run: git config --global user.email "andrew.ryan.vanbeek@gmail.com"
-    - run: git config --global user.name "avb-is-me"
-    - run: git add aggregated.md
-    - run: git commit -m "Aggregate Markdown files"
+    - run: cat dev-docs/* >> extracted.md
+    - run: git add extracted.md
+    - run: git commit -m "Extract contents from dev-docs folder"
     - run: git push
+
