@@ -8,6 +8,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: cat dev-docs/* >> extracted.md
+    - run: git config --global user.email "andrew.ryan.vanbeek@gmail.com"
+    - run: git config --global user.name "avb-is-me"
     - run: git add extracted.md
     - run: git commit -m "Extract contents from dev-docs folder"
     - run: git push
