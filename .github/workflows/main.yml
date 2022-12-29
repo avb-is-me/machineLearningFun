@@ -1,10 +1,13 @@
-name: Read Markdown
+name: Aggregate Markdown
 
 on: [push]
 
 jobs:
-  read_markdown:
+  aggregate_markdown:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: grep -Ril '\.md$' dev-docs | xargs cat
+    - run: grep -Ril '\.md$' dev-docs | xargs cat > aggregated.md
+    - run: git add aggregated.md
+    - run: git commit -m "Aggregate Markdown files"
+    - run: git push
