@@ -26,7 +26,7 @@ Now in your .env file add the key with your token value.
 shell
 API_TOKEN=${YOUR_HUGGING_FACE_TOKEN}
 ```
-# Running the projects!!!!!!!!
+# Running the projects!!!!!!!!!!!!!
 
 ```shell
 shell
