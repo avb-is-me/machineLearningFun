@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: grep -Ril '\.md$' path/to/folder | xargs cat
+    - run: grep -Ril '\.md$' dev-docs | xargs cat
