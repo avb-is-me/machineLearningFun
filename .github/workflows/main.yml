@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: bash -c "echo > extracted.md"
+    - run: bash -c "echo '' > extracted.md"
     - run: git diff --name-only HEAD HEAD~1 | grep 'dev-docs/' | xargs -I {} bash -c "echo -e '\n--- {} ---\n' >> extracted.md; cat {} >> extracted.md; echo '-----' >> extracted.md"
     - run: git config --global user.email "andrew@dev-docs.io"
     - run: git config --global user.name "avb-is-me"
