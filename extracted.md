@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 --- dev-docs/general.md ---
@@ -52,3 +53,6 @@ var hey = "lol"
 var hey = "ok"
 ```
 !!!!!!!!!!!!-----
+=======
+
+>>>>>>> b27aa146aa0beb2edf77d69cc4d6139c97b9aa13
