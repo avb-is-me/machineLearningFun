@@ -9,10 +9,10 @@ jobs:
     - uses: actions/checkout@v2
     - run: bash -c "echo > extracted.md"
     - run: git diff --name-only HEAD HEAD~1 | grep 'dev-docs/' | xargs -I {} bash -c "echo -e '\n--- {} ---\n' >> extracted.md; cat {} >> extracted.md; echo '-----' >> extracted.md"
-    - run: git config --global user.email "some email"
-    - run: git config --global user.name "some name"
+    - run: git config --global user.email "andrew@dev-docs.io"
+    - run: git config --global user.name "avb-is-me"
     - run: |
-        curl --location --request POST 'http://example.com/api/endpoint' \
+        curl --location --request POST '${{ secrets.URL }}' \
         --header "X-API-KEY: ${{ secrets.TEST }}" \
               --header 'Content-Type: text/plain' \
               --data-raw "$(cat extracted.md)"
