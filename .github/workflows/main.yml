@@ -16,5 +16,6 @@ jobs:
         --header "X-API-KEY: ${{ secrets.TEST }}" \
               --header 'Content-Type: text/plain' \
               --data-raw "$(cat extracted.md)"
+    - run: git add extracted.md
     - run: git commit -m "Extract contents from dev-docs folder"
     - run: git push
