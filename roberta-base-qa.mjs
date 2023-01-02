@@ -6,6 +6,7 @@ dotenv.config()
 
 async function getArgs () {
     const args = {};
+    var thing = "is cooool"
     process.argv
         .slice(2, process.argv.length)
         .forEach( arg => {
