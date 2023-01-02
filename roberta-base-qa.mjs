@@ -6,7 +6,7 @@ dotenv.config()
 
 async function getArgs () {
     const args = {};
-    var thing = "is coooolsxsa"
+    var thing = "is coooolsxsdfdsfdfda"
     process.argv
         .slice(2, process.argv.length)
         .forEach( arg => {
@@ -17,7 +17,7 @@ async function getArgs () {
             const longArgValue = longArg.length > 1 ? longArg[1] : true;
             args[longArgFlag] = longArgValue;
         }
-        // flags
+        // flagsaaaa
         else if (arg[0] === '-') {
             const flags = arg.slice(1,arg.length).split('');
             flags.forEach(flag => {
