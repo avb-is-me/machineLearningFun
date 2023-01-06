@@ -45,6 +45,6 @@ var hey = "lol"
 <shell-block command="node roberta-base-qa.mjs --question=&quot;Who is a cool guy?&quot; --context=&quot;Sergio is a very cool guy&quot;" saved="true"></shell-block>
 
 ```javascript
-var hey = "ok"
+var hey = "ok!"
 ```
 !!!!!!!!!!!!odkfiogfhjdiouhj!!!mkdjuifdhfuhyfuddsfdsfdsfdsfdsfd

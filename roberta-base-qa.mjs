@@ -6,7 +6,7 @@ dotenv.config()
 
 async function getArgs () {
     const args = {};
-    var thing = "is coooolsxsdfdsfdfda"
+    var thing = "is coooolsxsdfdsfdfddksnfjdna!!!"
     process.argv
         .slice(2, process.argv.length)
         .forEach( arg => {
@@ -28,12 +28,15 @@ async function getArgs () {
     return args;
 }
 
+async function coolFunction() {
+    return "I am so cool"
+}
 
 async function query(inputData) {
     const args = await getArgs();
     var data = {"inputs": {
 		"question": args.question,
-		"context": args.context || "My name is Clara and I live in Berkeley."
+		"context": args.context || "My name is Clafdgifdjgufdugra and I live in Berkeley."
 	}}
 	const response = await fetch(
 		"https://api-inference.huggingface.co/models/deepset/roberta-base-squad2",
