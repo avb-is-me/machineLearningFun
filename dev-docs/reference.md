@@ -1,49 +1,30 @@
-
 # Hey
 ## item
 
-
- OKduishfyugsyifgyudgsyufgydusg
+OKduishfyugsyifgyudgsyufgydusg
 
 # LOL
 ## ok
 
- fskdiohfyudgsyufgyuedg
+fskdiohfyudgsyufgyuedg
 
 # getArgs
-## function
-
- This function gets the arguements from argv. It assumes the that the CLI will receive a context flag and a question flag.
+## Imported Code Object
 
 
+This function gets the arguements from argv. It assumes the that the CLI will receive a context flag and a question flag!!
 # query
-## function
+## Imported Code Object
+
 
  This function use the %ref|getArgs|ref% function to take the question and answer and feed it to the Hugging Face API and then returns the result.
-
-
 # then() callback
-## function
+## Imported Code Object
 
- Just your normal then callback.
-
+Just your normal then callback.
 
 # catch() callback
-## function
+## Imported Code Object
 
- Just your normal catch callback
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Just your normal catch callback %ref|query|ref%
 

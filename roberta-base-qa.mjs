@@ -28,6 +28,7 @@ async function getArgs () {
     return args;
 }
 
+
 async function coolFunction() {
     return "I am so cool"
 }
